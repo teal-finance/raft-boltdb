@@ -5,7 +5,7 @@ import (
 	"time"
 
 	metrics "github.com/armon/go-metrics"
-	"github.com/boltdb/bolt"
+	"go.etcd.io/bbolt"
 )
 
 const (
@@ -33,7 +33,7 @@ func (b *BoltStore) RunMetrics(ctx context.Context, interval time.Duration) {
 	}
 }
 
-func (b *BoltStore) emitMetrics(prev *bolt.Stats) *bolt.Stats {
+func (b *BoltStore) emitMetrics(prev *bbolt.Stats) *bbolt.Stats {
 	newStats := b.conn.Stats()
 
 	stats := newStats
