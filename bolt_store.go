@@ -37,12 +37,12 @@ type BoltStore struct {
 
 // Options contains all the configuration used to open the BoltDB
 type Options struct {
-	// Path is the file path to the BoltDB to use
-	Path string
-
 	// BoltOptions contains any specific BoltDB options you might
 	// want to specify [e.g. open timeout]
 	BoltOptions *bbolt.Options
+
+	// Path is the file path to the BoltDB to use
+	Path string
 
 	// NoSync causes the database to skip fsync calls after each
 	// write to the log. This is unsafe, so it should be used
