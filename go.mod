@@ -1,4 +1,4 @@
-module raftboltdb
+module github.com/teal-finance/raft-boltdb
 
 go 1.17
 
