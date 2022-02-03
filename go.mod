@@ -1,4 +1,4 @@
-module raft-boltdb
+module raftboltdb
 
 go 1.17
 
