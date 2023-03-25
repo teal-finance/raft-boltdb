@@ -4,7 +4,7 @@ import (
 	"os"
 	"testing"
 
-	raftbench "github.com/hashicorp/raft/bench"
+	raftbench "github.com/teal-finance/raft/bench"
 )
 
 func BenchmarkBoltStore_FirstIndex(b *testing.B) {

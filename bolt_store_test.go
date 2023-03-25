@@ -8,8 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hashicorp/raft"
 	"go.etcd.io/bbolt"
+
+	"github.com/teal-finance/raft"
 )
 
 func testBoltStore(t testing.TB) *BoltStore {

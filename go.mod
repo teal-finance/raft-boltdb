@@ -2,10 +2,12 @@ module github.com/teal-finance/raft-boltdb
 
 go 1.17
 
+replace github.com/teal-finance/raft => ../raft
+
 require (
 	github.com/armon/go-metrics v0.3.10
 	github.com/hashicorp/go-msgpack v1.1.5
-	github.com/hashicorp/raft v1.3.3
+	github.com/teal-finance/raft v1.3.3
 	go.etcd.io/bbolt v1.3.6
 )
 

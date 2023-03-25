@@ -5,14 +5,15 @@ import (
 	"time"
 
 	metrics "github.com/armon/go-metrics"
-	"github.com/hashicorp/raft"
 	"go.etcd.io/bbolt"
+
+	"github.com/teal-finance/raft"
 )
 
 const (
 	// Permissions to use on the db file. This is only used if the
 	// database file does not exist and needs to be created.
-	dbFileMode = 0600
+	dbFileMode = 0o600
 )
 
 var (
